@@ -1,0 +1,6 @@
+path: /Users/jamesschwartz/PycharmProject/nbatracker/YOLOV8Train
+train: /Users/jamesschwartz/PycharmProject/nbatracker/YOLOV8Train/images/train
+val: /Users/jamesschwartz/PycharmProject/nbatracker/YOLOV8Train/images/train
+
+names:
+  0: dribble
