@@ -3,9 +3,9 @@ import random
 import cv2
 import numpy as np
 from ultralytics import YOLO
-import config
+import configs
 
-project = config.ROBOFLOW_PRIVATE_KEY.workspace().project("dribble-identifier")
+project = configs.ROBOFLOW_PRIVATE_KEY.workspace().project("dribble-identifier")
 model = project.version(1).model
 
 # infer on a local image
