@@ -1,13 +1,11 @@
+import os
 import random
-
 import cv2
 import numpy as np
 from ultralytics import YOLO
-from roboflow import Roboflow
+import config
 
-from roboflow import Roboflow
-rf = Roboflow(api_key="RxTGivlPqSdgsqVrETZL")
-project = rf.workspace().project("dribble-identifier")
+project = config.ROBOFLOW_PRIVATE_KEY.workspace().project("dribble-identifier")
 model = project.version(1).model
 
 # infer on a local image
